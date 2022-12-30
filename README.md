@@ -110,4 +110,7 @@ For detailed explanation on how things work, check out the [documentation](https
 <!-- Usage -->
 ## :eyes: Usage
 
-The Name Of The Game is about guessing the title of the blurred cover image as fast as possible. The image will get less blurry with time, which also means that the player will recive less points. The player can choose to use a hint by clicking on the lightbulb in the top right of the screen. This will take away 2 points from the players score. Abbreviations of the title are considered when a guess is submitted as well as different translations of the title in some cases. Misspelling a title will still give the player full points.
+* The Name Of The Game is about guessing the title of the blurred cover image as fast as possible. 
+* The image will get less blurry with time, which also means that the player will recive less points. 
+* The player can choose to use a hint by clicking on the lightbulb in the top right of the screen. This will take away 2 points from the players score. * Abbreviations of the title are considered when a guess is submitted as well as different translations of the title in some cases. 
+* Misspelling a title will still give the player full points.
