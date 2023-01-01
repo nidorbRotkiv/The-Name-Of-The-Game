@@ -37,7 +37,7 @@ function getLeastPoints(arr) {
 }
 
 module.exports = (req, res) => {
-  async function handle() {
+  (async () => {
     const entries = await getRanking();
     if (req.method === "POST") {
       for (let i = 0; i < entries.length; i++) {
@@ -74,6 +74,5 @@ module.exports = (req, res) => {
     } else {
       res.json({ action: "method is not valid" });
     }
-  }
-  handle();
+  })();
 };

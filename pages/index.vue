@@ -184,13 +184,19 @@ export default {
       }
       this.blurValue = 20;
       const gameObj = this.games[this.gameIndex];
-      this.imageURL = `https://images.igdb.com/igdb/image/upload/t_cover_big_2x/${gameObj.imageID}.jpg`;
+      (async () => {
+        const url = `https://images.igdb.com/igdb/image/upload/t_cover_big_2x/${gameObj.imageID}.jpg`
+        this.imageURL = url;
+        const img = new Image();
+        img.src = url;
+        await img.decode();
+      })();
       this.namesOfGame = [];
       this.namesOfGame.push(gameObj.name);
       this.handleAltTitles(gameObj);
       this.handleHint(gameObj);
       this.gameIndex++;
-      await new Promise((resolve) => setTimeout(resolve, 500)); // giving the user time to see the new game
+      await new Promise((resolve) => setTimeout(resolve, 400)); // giving the user time to see the new game
       this.startTimer();
     },
     async startTimer() {

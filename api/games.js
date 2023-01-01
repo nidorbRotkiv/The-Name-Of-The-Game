@@ -12,7 +12,7 @@ function getIDS(minValue, maxValue, amount) {
 }
 
 module.exports = (req, res) => {
-  async function sendData() {
+  (async () => {
     let category = req.query.category;
     // category is a decade
     if (!isNaN(category)) {
@@ -53,6 +53,5 @@ module.exports = (req, res) => {
       );
       res.json(data);
     }
-  }
-  sendData();
+  })();
 };
