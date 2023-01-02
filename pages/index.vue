@@ -173,7 +173,7 @@ export default {
           points: this.points,
         }),
       }).then((res) => res.json());
-      await new Promise((resolve) => setTimeout(resolve, 300)); // wait for the ranking to be updated
+      await new Promise((resolve) => setTimeout(resolve, 400)); // wait for the ranking to be updated
       this.loadWindow = false;
       this.endWindow = true;
     },
@@ -312,6 +312,8 @@ export default {
             gamesID.splice(gamesID.indexOf(cover.game), 1);
           }
         });
+        // api restriction is 4 calls per second
+        await new Promise((resolve) => setTimeout(resolve, 260));
       }
 
       // create array of games with all it's data
