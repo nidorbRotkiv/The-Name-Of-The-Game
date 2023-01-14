@@ -110,7 +110,7 @@ export default {
     },
     submitGuess(guess) {
       for (const title of this.namesOfGame) {
-        if (this.stringSimilarity(guess, title.toString()) > 0.8) {
+        if (this.stringSimilarity(guess.trim(), title.toString()) > 0.8) {
           this.$refs.inputGuess.changeBorderColor("var(--lightgreen)");
           this.correctGuess = true;
           this.points += this.potentialPoints;
