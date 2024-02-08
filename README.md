@@ -20,12 +20,12 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
+  * [Screenshot](#camera-screenshot)
   * [Tech Stack](#space_invader-tech-stack)
   * [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
-  * [Setup](#Setup)
+  * [Setup](#gear-setup)
 - [Usage](#eyes-usage)
 
   
@@ -79,7 +79,7 @@ To run this project, you will need to add the following environment variables to
    <li><a href="https://supabase.com/">Key from Supabase</a></li>
  </ul>
 
-### Setup
+### :gear: Setup
 
 Clone the project
 
